@@ -1,0 +1,2 @@
+- Artigo: https://www.overleaf.com/1222867729nkrygpnmzdjv
+- Seminário: 
