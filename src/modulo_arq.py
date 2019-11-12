@@ -24,3 +24,10 @@ class GerenteArquivos:
     disco = []
     #Saidas do gerenciador de arquivos
     log = []
+    # os dados devem ficar residentes no disco
+    def inicia_disco(self):
+        self.disco = [0 for i in range(self.qtd_blocos)]
+        for arq in self.arquivos:
+            self.disco[arq['bloco_inicio']:arq['bloco_inicio'] + arq['tamanho']] = arq['tamanho']*[arq['nome']]
+        #o algoritmo a ser usado no armazenamento do disco (embora nao seja usual ser usado na alocacao do disco) seja o first-fit 
+
