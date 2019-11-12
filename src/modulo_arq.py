@@ -15,7 +15,7 @@ class OperacaoArquivo:
         else:
             self.tamanho = None
 
-class FileManager:
+class GerenteArquivos:
     qtd_blocos = 0
     qtd_segmentos = 0
     arquivos = []
